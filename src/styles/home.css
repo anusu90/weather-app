@@ -1,0 +1,106 @@
+.home {
+  width: 100%;
+  height: 905px;
+  background-image: url(../img/sky.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.topbar > ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.topbar > ul > li {
+  margin: 48px 23.5px 48px 23.5px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.weather_details {
+  display: flex;
+  justify-content: right;
+  margin-right: 7%;
+  margin-top: 2%;
+}
+
+.weather_details > div {
+  width: 516px;
+  height: 348px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+  opacity: 0.8;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+}
+
+.weather_details > div > h3 {
+  margin: 59px 0px 24px 64px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.table {
+  margin-left: 64px;
+  color: #ffffff;
+}
+
+td {
+  padding-top: 28px;
+}
+
+.temperature {
+  display: flex;
+  color: #ffffff;
+  margin-left: 5%;
+  margin-top: 100px;
+}
+
+.temperature > h1 {
+  font-weight: 600;
+  font-size: 128px;
+  line-height: 192px;
+}
+
+.temperature > span {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  width: 31px;
+  height: 72px;
+}
+
+.temperature > div {
+  display: flex;
+  align-items: center;
+}
+
+.info-sm > h3 {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 78px;
+}
+
+.info-sm > span {
+  margin-right: 10px;
+}
+
+.info-icon {
+  width: 48.56px;
+  height: 48.36px;
+  margin-left: 17px;
+}

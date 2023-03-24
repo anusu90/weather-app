@@ -1,0 +1,146 @@
+.news-info {
+  height: 741px;
+  display: flex;
+  justify-content: center;
+}
+
+.news-info > div > h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  margin-top: 86px;
+}
+
+.news-cards {
+  display: flex;
+  color: #ffffff;
+}
+
+.news-cards > div {
+  width: 293px;
+  height: 395px;
+  border-radius: 20px;
+  margin: 52px 19px 0px 19px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+
+.news-cards > div > p {
+  width: 247px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 282px 0px 46px 23px;
+  transition: all 0.3s ease 0s;
+  position: relative;
+}
+
+.news-cards > div::before {
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 20px;
+}
+
+.thunder::before {
+  background: url(../img/thunder.png);
+}
+
+.sun::before {
+  background: url(../img/sun.png);
+}
+
+.cloud::before {
+  background: url(../img/cloud.png);
+}
+
+.news-cards > div:hover:before {
+  opacity: 0.8;
+}
+
+.view-more {
+  width: 293px;
+  text-align: center;
+  height: 300px;
+  top: 160px;
+  /* background-color: rgba(137, 43, 226, 0.178); */
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  transition: transform 1s cubic-bezier(0, 0.47, 0.96, 0.46);
+}
+
+.btn {
+  width: 164px;
+  height: 56px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: inherit;
+  transform: translate(0px, -230px);
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+  color: rgba(27, 8, 44, 0.541);
+  background-color: #ffffff;
+  border: 1px solid inherit;
+}
+
+.footer {
+  height: 230px;
+  background-color: black;
+  display: flex;
+  color: #ffffff;
+}
+
+.footer > .list-items {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  width: 100%;
+  margin: 30px 10% 0px 10px;
+}
+
+.list-items > ul {
+  margin: 20px;
+}
+
+.header-ft {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 990px) {
+  .news-cards {
+    display: block;
+  }
+  .news-cards > div > p {
+    margin: 0px 0px 46px 23px;
+    height: 350px;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+  }
+  .news-info {
+    height: 1541px;
+  }
+}
